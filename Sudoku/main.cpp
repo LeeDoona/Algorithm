@@ -4,7 +4,6 @@ int main()
 {
 	int i, j, k;
 	int testNum;
-	int gameBoard[9][9];
 
 	FILE *inFile = fopen("input.txt", "r");
 	fscanf(inFile, "%d", &testNum);
@@ -23,11 +22,11 @@ int main()
 
 		for (j = 0; j < 9; j++){
 			for (k = 0; k < 9; k++){
-				fscanf(inFile, "%d ", &gameBoard[j][k]);
+				fscanf(inFile, "%d ", &solver.gameBoard[j][k]);
 			}
 		}
 
-		solver.solveSudoku(BruteForce);
+		//solver.solveSudoku(BruteForce);
 	}
 
 	fclose(inFile);
