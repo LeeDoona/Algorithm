@@ -81,7 +81,9 @@
     <ClInclude Include="sudoku.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bruteforce.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sudoku.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

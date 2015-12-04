@@ -1,4 +1,6 @@
 #include "sudoku.h"
+#pragma warning(disable:4996)
+#pragma warning(disable:4101)			//didn't use variable
 
 int main()
 {
@@ -26,7 +28,8 @@ int main()
 			}
 		}
 
-		//solver.solveSudoku(BruteForce);
+		solver.solveSudoku(BruteForce);
+		solver.printSolution();
 	}
 
 	fclose(inFile);
